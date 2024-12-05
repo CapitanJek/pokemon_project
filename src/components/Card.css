@@ -1,0 +1,14 @@
+.cardWrapper {
+    width: 120px;
+    height: 140px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.cardTitle {
+    font-size: 24px;
+    margin: 0 auto;
+    text-align: center;
+}
