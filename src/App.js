@@ -1,11 +1,10 @@
-import MainPage from "./pages/MainPage";
-import PokemonPage from "./pages/PokemonPage";
+import CheckHome from "./components/Home";
+
 
 function App() {
   return (
     <>
-        <MainPage/>
-        <PokemonPage/>
+       <CheckHome/>
     </>
   );
 }

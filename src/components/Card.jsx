@@ -28,19 +28,17 @@ const Card = (props) => {
 
 
     return (
-            <div className="cardWrapper" onClick={handleGetPokemons}>
-                <p className='cardTitle'>{children}</p>
-                {
-                    showPokemon && <img src={pokemon.sprites.front_default} alt="image"/>
-                }
-
-                <h2>Hello is Lesson's branch</h2>
-                <h2>Hello is Lesson's branch</h2>
-                <h2>Hello is Lesson's branch</h2>
-                <h2>Hello is Lesson's branch</h2>
-                <h2>Hello is Lesson's branch</h2>
-                <h2>Hello is Lesson's branch</h2>
-            </div>
+            // <div className="cardWrapper" onClick={handleGetPokemons}>
+            //     <p className='cardTitle'>{children}</p>
+            //     {
+            //         showPokemon && <img src={pokemon.sprites.front_default} alt={children}"/>
+            //     }
+            //
+            //
+            // </div>
+        <div>
+                Hello world
+        </div>
     );
 };
 
