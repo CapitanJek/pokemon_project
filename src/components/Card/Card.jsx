@@ -15,7 +15,7 @@ const Card = (props) => {
 
     useEffect(() => {
        handleGetPokemon()
-    }, []);
+    }, [pokemon]);
 
     useEffect(() => {
         console.log(pokemon)
