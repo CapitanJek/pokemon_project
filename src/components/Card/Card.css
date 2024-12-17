@@ -1,14 +1,32 @@
+a {
+    text-decoration: none;
+}
+
 .cardWrapper {
-    width: 120px;
-    height: 140px;
-    border: 2px solid gray;
+    font-family: Arial, Helvetica, sans-serif;
+    /*width: 16.6rem;*/
+    /*height: 140px;*/
+    /*border: 2px solid gray;*/
     border-radius: 8px;
     cursor: pointer;
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 412px;
 
 }
 
 .cardTitle {
-    font-size: 24px;
+    color: antiquewhite;
+    /*cursor: pointer;*/
+    font-size: 38px;
+    text-transform: uppercase;
     margin: 0 auto;
     text-align: center;
+}
+
+.cardImg {
+    width: 200px;
 }

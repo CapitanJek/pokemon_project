@@ -1,5 +1,5 @@
 .wrapper {
-    display: flex;
+    display: grid;
     gap: 10px;
-    flex-wrap: wrap;
+    grid-template: auto / repeat(5, 1fr);
 }

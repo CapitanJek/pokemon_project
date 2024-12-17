@@ -18,23 +18,23 @@ const MainPage = () => {
   }, []);
 
     useEffect(() => {
-
-    }, []);
+      console.log(result)
+    }, [result]);
 
   return (
     <>
-      <div className="wrapper">
-        {result?.results?.map((item, i) => (
-          <div key={i}>
-            <Card name={item.name}>{item.name}</Card>
-          </div>
-        ))}
-      </div>
+        <div className="wrapper">
+          {result?.results?.map((item, i) => (
+              <div key={i}>
+                <Card url={item.url} name={item.name}>{item.name}</Card>
+              </div>
+          ))}
+        </div>
 
-      <div>
-        <button onClick={() => handleGetPokemons(result.previous)}>Prev</button>
-        <button onClick={() => handleGetPokemons(result.next)}>Next</button>
-      </div>
+        <div>
+          <button onClick={() => handleGetPokemons(result.previous)}>Prev</button>
+          <button onClick={() => handleGetPokemons(result.next)}>Next</button>
+        </div>
     </>
   );
 };

@@ -1,6 +1,7 @@
 import MainPage from "./pages/MainPage";
 import PokemonPage from "./pages/PokemonPage";
 import Header from "./components/Header";
+import Container from "./components/Container";
 
 function App() {
   const currentUrl = window.location.pathname;
@@ -8,8 +9,10 @@ function App() {
   console.log(currentUrl);
 
   return <>
-    <Header/>
-    {currentUrl === "/" ? <MainPage /> : <PokemonPage pokemonUrl={currentUrl}/>}
+      <Container>
+        <Header/>
+        {currentUrl === "/" ? <MainPage /> : <PokemonPage pokemonUrl={currentUrl}/>}
+      </Container>
       </>;
 }
 
