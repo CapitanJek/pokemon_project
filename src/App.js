@@ -1,19 +1,26 @@
-import MainPage from "./pages/MainPage";
-import PokemonPage from "./pages/PokemonPage";
 import Header from "./components/Header";
 import Container from "./components/Container";
+import MainPage from "./pages/MainPage";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
-  const currentUrl = window.location.pathname;
+  // const currentUrl = window.location.pathname;
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <MainPage />,
+    },
+  ]);
 
-  console.log(currentUrl);
-
-  return <>
+  return (
+    <>
       <Container>
-        <Header/>
-        {currentUrl === "/" ? <MainPage /> : <PokemonPage pokemonUrl={currentUrl}/>}
+        <Header />
+        <RouterProvider router={router} />
+        {/*{currentUrl === "/" ? <MainPage /> : <PokemonPage pokemonUrl={currentUrl}/>}*/}
       </Container>
-      </>;
+    </>
+  );
 }
 
 export default App;
